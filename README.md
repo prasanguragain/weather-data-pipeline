@@ -12,3 +12,18 @@ This project automates the ingestion, transformation, and visualization of weath
 ---
 
 ##  Repository Structure
+weather-data-pipeline/
+├── api_request/ # Python modules: fetch & insert weather API data
+├── airflow/
+│ └── dags/
+│ └── weather_api_orchestrator.py
+├── dbt/
+│ ├── my_project/ # dbt project
+│ └── profiles.yml # or symlink to ~/.dbt/profiles.yml
+├── postgres/ # DB init scripts for Airflow & Superset
+├── docker/
+│ ├── .env.example # Sample env file (never commit secrets)
+│ └── superset_config.py # Superset config via Docker
+├── docker-compose.yml # Orchestration of all services
+├── .gitignore
+└── README.md
