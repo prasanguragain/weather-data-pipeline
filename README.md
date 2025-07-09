@@ -12,7 +12,6 @@ This project automates the ingestion, transformation, and visualization of weath
 """
 
 # Repository Structure
-# (as text tree)
 """
 weather-data-pipeline/
 ├── api_request/              # Python modules: fetch & insert weather API data
@@ -32,43 +31,43 @@ weather-data-pipeline/
 """
 
 # Prerequisites
-prerequisites = [
-    "Docker & Docker Compose",
-    "Python 3 (for running scripts outside Docker)",
-    "(Optional) dbt Core for local transformations"
+
+    Docker & Docker Compose
+    Python 3 (for running scripts outside Docker)
+    (Optional) dbt Core for local transformations
 ]
 
 # Getting Started Instructions
-steps = [
-    "Clone the repo & copy the .env.example",
-    "Run all services using docker-compose",
-    "Access Airflow and Superset on respective ports",
-    "Explore the Airflow DAG and Superset dashboard"
+
+    Clone the repo & copy the .env.example
+    Run all services using docker-compose
+    Access Airflow and Superset on respective ports
+    Explore the Airflow DAG and Superset dashboard
 ]
 
 # Cleanup
-cleanup_cmd = "docker-compose down -v"
+    cleanup_cmd:docker-compose down -v
 
 # Development Tips
-python_tips = [
-    "Use venv and install requirements if testing locally",
-    "Modify DAGs in airflow/dags",
-    "Edit dbt models in dbt/my_project/models",
-    "Customize Superset via docker/superset_config.py"
+
+    Use venv and install requirements if testing locally
+    Modify DAGs in airflow/dags
+    Edit dbt models in dbt/my_project/models
+    Customize Superset via docker/superset_config.py
 ]
 
 # Security & Best Practices
-best_practices = [
-    "Do not commit secrets or API keys",
-    "Use .gitignore to exclude volumes, logs, etc.",
-    "Secure Superset, Airflow, and DB for production"
+
+    Do not commit secrets or API keys
+    Use .gitignore to exclude volumes, logs, etc.
+    Secure Superset, Airflow, and DB for production
 ]
 
 # Next Steps
-next_steps = [
-    "Write unit tests for Python and dbt",
-    "Set up CI/CD",
-    "Publish images to Docker Hub or GitHub Packages"
+
+    Write unit tests for Python and dbt,
+    Set up CI/CD,
+    Publish images to Docker Hub or GitHub Packages
 ]
 
 # License & Acknowledgements
@@ -78,5 +77,6 @@ Copyright (c) 2025 Prasan Guragain
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 ...
-license_info = "MIT License.
-print("\nEnjoy building and visualizing weather insights! 🌤️")
+MIT License.
+
+#Enjoy building and visualizing weather insights!
