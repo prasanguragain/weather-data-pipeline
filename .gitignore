@@ -24,3 +24,4 @@ airflow/plugins/
 *.csv  
 *.parquet  
 *.db  
+postgres/data/
