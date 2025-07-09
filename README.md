@@ -1,4 +1,4 @@
-# 🌦 Weather Data Pipeline
+# Weather Data Pipeline
 
 This project automates the ingestion, transformation, and visualization of weather data using a modern data stack:
 
