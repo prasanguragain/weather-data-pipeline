@@ -28,3 +28,20 @@ weather-data-pipeline/
 ├── .gitignore
 └── README.md
 ```
+---
+
+ Prerequisites
+
+- Docker & Docker Compose  
+- Python 3 (for running scripts/exploration outside Docker)  
+- (Optional) dbt Core installed locally if you want to run transformations locally
+
+---
+Getting Started
+
+1. **Clone the repo & set environment variables**
+
+   ```bash
+   git clone https://github.com/prasanguragain/weather-data-pipeline.git
+   cd weather-data-pipeline
+   cp docker/.env.example docker/.env
