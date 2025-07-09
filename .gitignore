@@ -1,0 +1,26 @@
+# Python/Venv  
+.venv/  
+__pycache__/  
+*.py[cod]  
+
+# DBT (already covered in dbt/.gitignore)  
+# target/  
+# logs/  
+
+# Docker/Compose  
+.env  
+.env.*  
+
+# Airflow  
+airflow/logs/  
+airflow/plugins/  
+
+# System/IDE  
+.DS_Store  
+.idea/  
+.vscode/  
+
+# Data files  
+*.csv  
+*.parquet  
+*.db  
