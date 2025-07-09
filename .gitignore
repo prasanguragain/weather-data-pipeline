@@ -1,27 +1,22 @@
-# Python/Venv  
-.venv/  
-__pycache__/  
-*.py[cod]  
+# DBT ignores
+/target/
+/dbt_packages/
+/logs/
+/profiles.yml
 
-# DBT (already covered in dbt/.gitignore)  
-# target/  
-# logs/  
+# Python ignores
+__pycache__/
+*.py[cod]
+.venv/
 
-# Docker/Compose  
-.env  
-.env.*  
+# System files
+.DS_Store
+.idea/
 
-# Airflow  
-airflow/logs/  
-airflow/plugins/  
+# Environment files
+.env
+.env.*
 
-# System/IDE  
-.DS_Store  
-.idea/  
-.vscode/  
-
-# Data files  
-*.csv  
-*.parquet  
-*.db  
+# Database files
 postgres/data/
+*.db
