@@ -1,9 +1,10 @@
 import requests
+from dotenv import load_dotenv
+import os
+def configure():
+    load_dotenv()
 
-
-
-api_key="e34280e90bb21b3b014f5198849ace6e"
-api_url=f"http://api.weatherstack.com/current?access_key={api_key}&query=Itahari"
+api_url=f"http://api.weatherstack.com/current?access_key={os.getenv(api_key)}&query=Itahari"
 def fetch_data():
     print("Fetching whether data from whetherstack API....")
     try:
